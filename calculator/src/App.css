@@ -1,0 +1,35 @@
+.answer {
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	top: 40%;
+	transform: translateY(-10%);
+}
+
+.calc-btns-container {
+	background: #404041;
+}
+
+.answer h1 {
+	font-size: 150px;
+}
+
+.calc-nums {
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+}
+
+.btn-nums {
+	font-size: 2em;
+	margin: 2px;
+	width: 80px;
+	height: 80px;
+}
+
+.zero {
+	margin: 2px;
+	width: 165px;
+	height: 80px;
+	font-size: 2em;
+}
