@@ -1,3 +1,4 @@
+
 .answer {
 	height: 100vh;
 	text-align: center;
@@ -16,7 +17,7 @@
 
 .calc-nums {
 	position: relative;
-	top: 45%;
+	top: 450px;
 	transform: translateY(-50%);
 }
 
@@ -32,4 +33,34 @@
 	width: 165px;
 	height: 80px;
 	font-size: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.answer {
+		width: 100%
+	}
+
+	.calc-btns-container {
+		height: 80vh;
+		width:100%;
+	}
+
+	.calc-nums {
+		position: relative;
+		top: 300px;
+
+	}
+
+	.btn-nums {
+		font-size: 25px;
+		width: 60px;
+		height: 70px;
+	}
+
+	.zero {
+		width: 125px;
+		height: 70px;
+		font-size: 25px
+	}
 }
