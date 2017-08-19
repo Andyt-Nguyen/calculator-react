@@ -20,7 +20,7 @@ class Calculator extends Component {
 			display = this.state.display + num
 		}
 		if(this.state.display.length < 7){
-			this.setState({display:display})
+			this.setState({display})
 		}
 	}
 
@@ -29,7 +29,7 @@ class Calculator extends Component {
 			this.setState({
 				display: '0',
 				temp: this.state.display,
-				operator:operator
+				operator
 			})
 		}
 	}
@@ -115,7 +115,7 @@ class Calculator extends Component {
 								<Button setDisplay={this.setDisplay.bind(this)} setNum={'1'} />
 								<Button setDisplay={this.setDisplay.bind(this)} setNum={'2'} />
 								<Button setDisplay={this.setDisplay.bind(this)} setNum={'3'} />
-								<button onClick={()=>this.setOperator('+')} className="btn btn-primary btn-nums">+</button>
+								<button onClick={ ()=>this.setOperator('+')} className="btn btn-primary btn-nums">+</button>
 							</div>
 
 							<div className="col-12">
@@ -134,9 +134,10 @@ class Calculator extends Component {
 
 const Button = (props) => {
 	return (
-		<button onClick={ ()=> props.setDisplay(props.setNum)}
-						className="btn btn-nums btn-primary">
-						{props.setNum}</button>
+		<button
+			onClick={ ()=> props.setDisplay(props.setNum) }
+			className="btn btn-nums btn-primary">
+			{props.setNum}</button>
 	)
 }
 
